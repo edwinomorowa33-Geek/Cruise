@@ -63,3 +63,11 @@
     appearance: none;
     cursor: pointer;
 }
+
+.Movie_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
