@@ -1,0 +1,90 @@
+/* MovieDetails.css */
+
+/* Container for the entire section */
+.movie_details {
+    display: flex;
+    flex-direction: column;
+    /* default mobile-friendly layout */
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #121828;
+    /* bluish-black background */
+    color: #e0e0e0;
+    /* light grey text */
+    min-height: 100vh;
+    gap: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Movie Poster Image */
+.movie_details_img {
+    width: 300px;
+    /* medium size for mobile */
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.movie_details_img:hover {
+    transform: scale(1.05);
+}
+
+/* Info container */
+.movie_details_info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Movie title */
+.movie_details_info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffd700;
+    /* golden title for emphasis */
+    margin-bottom: 10px;
+}
+
+/* Rating */
+.movie_details_info p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00ffea;
+    /* accent color for rating */
+}
+
+/* Overview description */
+.movie_details_info p:nth-of-type(2) {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cfcfcf;
+}
+
+/* Release date */
+.movie_details_info p:nth-of-type(3) {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #999;
+}
+
+/* Responsive layout for larger screens */
+@media screen and (min-width: 768px) {
+    .movie_details {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px 80px;
+    }
+
+    .movie_details_img {
+        width: 350px;
+        margin-right: 50px;
+    }
+
+    .movie_details_info {
+        text-align: left;
+    }
+}
